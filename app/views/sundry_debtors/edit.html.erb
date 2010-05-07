@@ -1,0 +1,12 @@
+<h1>Editing sundry_debtor</h1>
+
+<% form_for(@sundry_debtor) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @sundry_debtor %> |
+<%= link_to 'Back', sundry_debtors_path %>

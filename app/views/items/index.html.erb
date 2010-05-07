@@ -1,0 +1,26 @@
+<h1>Listing items</h1>
+
+<table>
+  <tr>
+    <th>Sale price</th>
+    <th>Purchase price</th>
+    <th>Quantity</th>
+    <th>Batch no</th>
+  </tr>
+
+<% @items.each do |item| %>
+  <tr>
+    <td><%=h item.sale_price %></td>
+    <td><%=h item.purchase_price %></td>
+    <td><%=h item.quantity %></td>
+    <td><%=h item.batch_no %></td>
+    <td><%= link_to 'Show', item %></td>
+    <td><%= link_to 'Edit', edit_item_path(item) %></td>
+    <td><%= link_to 'Destroy', item, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New item', new_item_path %>

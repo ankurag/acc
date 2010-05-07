@@ -1,0 +1,16 @@
+<h1>Editing journal_line</h1>
+
+<% form_for(@journal_line) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :amount %><br />
+    <%= f.text_field :amount %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @journal_line %> |
+<%= link_to 'Back', journal_lines_path %>

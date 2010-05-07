@@ -1,0 +1,11 @@
+<h1>New sundry_debtor</h1>
+
+<% form_for(@sundry_debtor) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', sundry_debtors_path %>

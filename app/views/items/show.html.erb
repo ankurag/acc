@@ -1,0 +1,23 @@
+<p>
+  <b>Sale price:</b>
+  <%=h @item.sale_price %>
+</p>
+
+<p>
+  <b>Purchase price:</b>
+  <%=h @item.purchase_price %>
+</p>
+
+<p>
+  <b>Quantity:</b>
+  <%=h @item.quantity %>
+</p>
+
+<p>
+  <b>Batch no:</b>
+  <%=h @item.batch_no %>
+</p>
+
+
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Back', items_path %>

@@ -1,0 +1,20 @@
+<h1>Listing account_groups</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+
+<% @account_groups.each do |account_group| %>
+  <tr>
+    <td><%=h account_group.name %></td>
+    <td><%= link_to 'Show', account_group %></td>
+    <td><%= link_to 'Edit', edit_account_group_path(account_group) %></td>
+    <td><%= link_to 'Destroy', account_group, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New account_group', new_account_group_path %>

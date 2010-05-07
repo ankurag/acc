@@ -1,0 +1,20 @@
+<h1>Listing journal_lines</h1>
+
+<table>
+  <tr>
+    <th>Amount</th>
+  </tr>
+
+<% @journal_lines.each do |journal_line| %>
+  <tr>
+    <td><%=h journal_line.amount %></td>
+    <td><%= link_to 'Show', journal_line %></td>
+    <td><%= link_to 'Edit', edit_journal_line_path(journal_line) %></td>
+    <td><%= link_to 'Destroy', journal_line, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New journal_line', new_journal_line_path %>

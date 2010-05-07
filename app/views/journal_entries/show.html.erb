@@ -1,0 +1,13 @@
+<p>
+  <b>Date:</b>
+  <%=h @journal_entry.date %>
+</p>
+
+<p>
+  <b>Narration:</b>
+  <%=h @journal_entry.narration %>
+</p>
+
+
+<%= link_to 'Edit', edit_journal_entry_path(@journal_entry) %> |
+<%= link_to 'Back', journal_entries_path %>

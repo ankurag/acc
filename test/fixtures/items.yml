@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  sale_price: 9.99
+  purchase_price: 9.99
+  quantity: 9.99
+  batch_no: MyString
+
+two:
+  sale_price: 9.99
+  purchase_price: 9.99
+  quantity: 9.99
+  batch_no: MyString

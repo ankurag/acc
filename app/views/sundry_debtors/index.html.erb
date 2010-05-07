@@ -1,0 +1,18 @@
+<h1>Listing sundry_debtors</h1>
+
+<table>
+  <tr>
+  </tr>
+
+<% @sundry_debtors.each do |sundry_debtor| %>
+  <tr>
+    <td><%= link_to 'Show', sundry_debtor %></td>
+    <td><%= link_to 'Edit', edit_sundry_debtor_path(sundry_debtor) %></td>
+    <td><%= link_to 'Destroy', sundry_debtor, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New sundry_debtor', new_sundry_debtor_path %>

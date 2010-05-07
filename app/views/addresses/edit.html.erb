@@ -1,0 +1,44 @@
+<h1>Editing address</h1>
+
+<% form_for(@address) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :street_address_1 %><br />
+    <%= f.text_field :street_address_1 %>
+  </p>
+  <p>
+    <%= f.label :street_address_2 %><br />
+    <%= f.text_field :street_address_2 %>
+  </p>
+  <p>
+    <%= f.label :city %><br />
+    <%= f.text_field :city %>
+  </p>
+  <p>
+    <%= f.label :district %><br />
+    <%= f.text_field :district %>
+  </p>
+  <p>
+    <%= f.label :state %><br />
+    <%= f.text_field :state %>
+  </p>
+  <p>
+    <%= f.label :pincode %><br />
+    <%= f.text_field :pincode %>
+  </p>
+  <p>
+    <%= f.label :tin_no %><br />
+    <%= f.text_field :tin_no %>
+  </p>
+  <p>
+    <%= f.label :pan_no %><br />
+    <%= f.text_field :pan_no %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @address %> |
+<%= link_to 'Back', addresses_path %>

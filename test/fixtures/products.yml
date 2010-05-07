@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  purchase_price: 9.99
+  sale_price: 9.99
+  vat_percent: 9.99
+
+two:
+  name: MyString
+  purchase_price: 9.99
+  sale_price: 9.99
+  vat_percent: 9.99

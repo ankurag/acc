@@ -1,0 +1,23 @@
+<p>
+  <b>Name:</b>
+  <%=h @product.name %>
+</p>
+
+<p>
+  <b>Purchase price:</b>
+  <%=h @product.purchase_price %>
+</p>
+
+<p>
+  <b>Sale price:</b>
+  <%=h @product.sale_price %>
+</p>
+
+<p>
+  <b>Vat percent:</b>
+  <%=h @product.vat_percent %>
+</p>
+
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>

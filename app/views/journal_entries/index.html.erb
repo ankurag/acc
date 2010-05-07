@@ -1,0 +1,22 @@
+<h1>Listing journal_entries</h1>
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Narration</th>
+  </tr>
+
+<% @journal_entries.each do |journal_entry| %>
+  <tr>
+    <td><%=h journal_entry.date %></td>
+    <td><%=h journal_entry.narration %></td>
+    <td><%= link_to 'Show', journal_entry %></td>
+    <td><%= link_to 'Edit', edit_journal_entry_path(journal_entry) %></td>
+    <td><%= link_to 'Destroy', journal_entry, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New journal_entry', new_journal_entry_path %>
