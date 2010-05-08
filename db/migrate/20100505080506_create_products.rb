@@ -6,6 +6,7 @@ class CreateProducts < ActiveRecord::Migration
       t.decimal :sale_price
       t.decimal :vat_percent
 
+      t.integer :company_id
       t.timestamps
     end
   end

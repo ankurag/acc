@@ -1,0 +1,16 @@
+<h1>Editing med_rep</h1>
+
+<% form_for(@med_rep) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @med_rep %> |
+<%= link_to 'Back', med_reps_path %>

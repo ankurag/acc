@@ -1626,3 +1626,18 @@ Processing AbcsController#index to ext_json (for 127.0.0.1 at 2010-05-07 17:17:5
   [4;35;1mAbc Load (0.0ms)[0m   [0mSELECT * FROM "abcs" LIMIT 50 OFFSET 0[0m
   [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "abcs" [0m
 Completed in 32ms (View: 0, DB: 0) | 200 OK [http://localhost/abcs?format=ext_json&_dc=1273232874255&start=0&limit=50&sort=id&dir=ASC]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-05-08 12:59:16) [GET]
+  [4;36;1mAccount Load (0.0ms)[0m   [0;1mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+Completed in 906ms (View: 859, DB: 0) | 200 OK [http://localhost/accounts]
+
+
+Processing AccountsController#edit (for 127.0.0.1 at 2010-05-08 12:59:37) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mAccount Load (0.0ms)[0m   [0mSELECT * FROM "accounts" WHERE ("accounts"."id" = 5) [0m
+Rendering template within layouts/accounts
+Rendering accounts/edit
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/accounts/5/edit]

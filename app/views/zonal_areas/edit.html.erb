@@ -1,0 +1,12 @@
+<h1>Editing zonal_area</h1>
+
+<% form_for(@zonal_area) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @zonal_area %> |
+<%= link_to 'Back', zonal_areas_path %>
