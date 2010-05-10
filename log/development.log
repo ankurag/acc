@@ -1626,3 +1626,549 @@ Processing AbcsController#index to ext_json (for 127.0.0.1 at 2010-05-07 17:17:5
   [4;35;1mAbc Load (0.0ms)[0m   [0mSELECT * FROM "abcs" LIMIT 50 OFFSET 0[0m
   [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "abcs" [0m
 Completed in 32ms (View: 0, DB: 0) | 200 OK [http://localhost/abcs?format=ext_json&_dc=1273232874255&start=0&limit=50&sort=id&dir=ASC]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-08 01:12:51) [GET]
+
+ActionController::RoutingError (No route matches "/account" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-05-08 01:12:54) [GET]
+  [4;36;1mAccount Load (14.7ms)[0m   [0;1mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.name) on line #11 of app/views/accounts/index.html.erb:
+8: <% @accounts.each do |account| %>
+9:   <tr>
+10:     <td><%=h account.name %></td>
+11:     <td><%=h account.account_group.name %></td>
+12:     <td><%= link_to 'Show', account %></td>
+13:     <td><%= link_to 'Edit', edit_account_path(account) %></td>
+14:     <td><%= link_to 'Destroy', account, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/views/accounts/index.html.erb:11
+    app/views/accounts/index.html.erb:8:in `each'
+    app/views/accounts/index.html.erb:8
+    app/controllers/accounts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (111.1ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2010-05-08 01:13:14) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+  [4;35;1mAccountGroup Load (0.4ms)[0m   [0mSELECT * FROM "account_groups" [0m
+Completed in 461ms (View: 456, DB: 0) | 200 OK [http://localhost/accounts/new]
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2010-05-08 01:13:18) [GET]
+  Parameters: {"id"=>"delete"}
+  [4;36;1mAccount Load (0.1ms)[0m   [0;1mSELECT * FROM "accounts" WHERE ("accounts"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Account with ID=delete):
+  app/controllers/accounts_controller.rb:16:in `show'
+
+Rendered rescues/_trace (37.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing AccountsController#delete (for 127.0.0.1 at 2010-05-08 01:13:24) [GET]
+  Parameters: {"id"=>"1"}
+
+ActionController::UnknownAction (No action responded to delete. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AccountsController#delete (for 127.0.0.1 at 2010-05-08 01:13:34) [GET]
+  Parameters: {"id"=>"2"}
+
+ActionController::UnknownAction (No action responded to delete. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AccountsController#1 (for 127.0.0.1 at 2010-05-08 01:13:40) [GET]
+  Parameters: {"id"=>"delete"}
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2010-05-08 01:13:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAccount Load (0.2ms)[0m   [0mSELECT * FROM "accounts" WHERE ("accounts"."id" = 1) [0m
+Rendering template within layouts/accounts
+Rendering accounts/show
+Completed in 48ms (View: 42, DB: 0) | 200 OK [http://localhost/accounts/1]
+
+
+Processing AccountsController#edit (for 127.0.0.1 at 2010-05-08 01:13:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAccount Load (0.2ms)[0m   [0;1mSELECT * FROM "accounts" WHERE ("accounts"."id" = 1) [0m
+Rendering template within layouts/accounts
+Rendering accounts/edit
+Completed in 49ms (View: 43, DB: 0) | 200 OK [http://localhost/accounts/1/edit]
+
+
+Processing AccountsController#update (for 127.0.0.1 at 2010-05-08 01:13:50) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"CE6e5eJ6JJf12DVoSTycyk0o4D+AQ/yzz5bihBx4mGI=", "account"=>{"name"=>"aaa"}, "id"=>"1"}
+  [4;35;1mAccount Load (0.2ms)[0m   [0mSELECT * FROM "accounts" WHERE ("accounts"."id" = 1) [0m
+Redirected to http://localhost:3000/accounts/1
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/accounts/1]
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2010-05-08 01:13:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAccount Load (0.2ms)[0m   [0;1mSELECT * FROM "accounts" WHERE ("accounts"."id" = 1) [0m
+Rendering template within layouts/accounts
+Rendering accounts/show
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/accounts/1]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-05-08 01:13:52) [GET]
+  [4;35;1mAccount Load (0.8ms)[0m   [0mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.name) on line #11 of app/views/accounts/index.html.erb:
+8: <% @accounts.each do |account| %>
+9:   <tr>
+10:     <td><%=h account.name %></td>
+11:     <td><%=h account.account_group.name %></td>
+12:     <td><%= link_to 'Show', account %></td>
+13:     <td><%= link_to 'Edit', edit_account_path(account) %></td>
+14:     <td><%= link_to 'Destroy', account, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/views/accounts/index.html.erb:11
+    app/views/accounts/index.html.erb:8:in `each'
+    app/views/accounts/index.html.erb:8
+    app/controllers/accounts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (47.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AccountsController#1 (for 127.0.0.1 at 2010-05-08 01:14:02) [GET]
+  Parameters: {"id"=>"delete"}
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AccountsController#1 (for 127.0.0.1 at 2010-05-08 01:14:06) [GET]
+  Parameters: {"id"=>"destroy"}
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AccountsController#destroy (for 127.0.0.1 at 2010-05-08 01:14:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAccount Load (0.2ms)[0m   [0;1mSELECT * FROM "accounts" WHERE ("accounts"."id" = 1) [0m
+  [4;35;1mAccount Destroy (13.8ms)[0m   [0mDELETE FROM "accounts" WHERE "id" = 1[0m
+Redirected to http://localhost:3000/accounts
+Completed in 22ms (DB: 14) | 302 Found [http://localhost/accounts/destroy/1]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-05-08 01:14:17) [GET]
+  [4;36;1mAccount Load (0.8ms)[0m   [0;1mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.name) on line #11 of app/views/accounts/index.html.erb:
+8: <% @accounts.each do |account| %>
+9:   <tr>
+10:     <td><%=h account.name %></td>
+11:     <td><%=h account.account_group.name %></td>
+12:     <td><%= link_to 'Show', account %></td>
+13:     <td><%= link_to 'Edit', edit_account_path(account) %></td>
+14:     <td><%= link_to 'Destroy', account, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/views/accounts/index.html.erb:11
+    app/views/accounts/index.html.erb:8:in `each'
+    app/views/accounts/index.html.erb:8
+    app/controllers/accounts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (47.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AccountsController#destroy (for 127.0.0.1 at 2010-05-08 01:14:30) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mAccount Load (0.2ms)[0m   [0mSELECT * FROM "accounts" WHERE ("accounts"."id" = 2) [0m
+  [4;36;1mAccount Destroy (0.3ms)[0m   [0;1mDELETE FROM "accounts" WHERE "id" = 2[0m
+Redirected to http://localhost:3000/accounts
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/accounts/destroy/2]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-05-08 01:14:30) [GET]
+  [4;35;1mAccount Load (0.8ms)[0m   [0mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.name) on line #11 of app/views/accounts/index.html.erb:
+8: <% @accounts.each do |account| %>
+9:   <tr>
+10:     <td><%=h account.name %></td>
+11:     <td><%=h account.account_group.name %></td>
+12:     <td><%= link_to 'Show', account %></td>
+13:     <td><%= link_to 'Edit', edit_account_path(account) %></td>
+14:     <td><%= link_to 'Destroy', account, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/views/accounts/index.html.erb:11
+    app/views/accounts/index.html.erb:8:in `each'
+    app/views/accounts/index.html.erb:8
+    app/controllers/accounts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (47.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AccountsController#destroy (for 127.0.0.1 at 2010-05-08 01:14:36) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mAccount Load (0.2ms)[0m   [0;1mSELECT * FROM "accounts" WHERE ("accounts"."id" = 3) [0m
+  [4;35;1mAccount Destroy (0.3ms)[0m   [0mDELETE FROM "accounts" WHERE "id" = 3[0m
+Redirected to http://localhost:3000/accounts
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/accounts/destroy/3]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-05-08 01:14:37) [GET]
+  [4;36;1mAccount Load (0.7ms)[0m   [0;1mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.name) on line #11 of app/views/accounts/index.html.erb:
+8: <% @accounts.each do |account| %>
+9:   <tr>
+10:     <td><%=h account.name %></td>
+11:     <td><%=h account.account_group.name %></td>
+12:     <td><%= link_to 'Show', account %></td>
+13:     <td><%= link_to 'Edit', edit_account_path(account) %></td>
+14:     <td><%= link_to 'Destroy', account, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/views/accounts/index.html.erb:11
+    app/views/accounts/index.html.erb:8:in `each'
+    app/views/accounts/index.html.erb:8
+    app/controllers/accounts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (47.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AccountsController#destroy (for 127.0.0.1 at 2010-05-08 01:14:42) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mAccount Load (0.1ms)[0m   [0mSELECT * FROM "accounts" WHERE ("accounts"."id" = 3) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Account with ID=3):
+  app/controllers/accounts_controller.rb:79:in `destroy'
+
+Rendered rescues/_trace (37.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-05-08 01:14:50) [GET]
+  [4;36;1mAccount Load (0.7ms)[0m   [0;1mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.name) on line #11 of app/views/accounts/index.html.erb:
+8: <% @accounts.each do |account| %>
+9:   <tr>
+10:     <td><%=h account.name %></td>
+11:     <td><%=h account.account_group.name %></td>
+12:     <td><%= link_to 'Show', account %></td>
+13:     <td><%= link_to 'Edit', edit_account_path(account) %></td>
+14:     <td><%= link_to 'Destroy', account, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/views/accounts/index.html.erb:11
+    app/views/accounts/index.html.erb:8:in `each'
+    app/views/accounts/index.html.erb:8
+    app/controllers/accounts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (116.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-05-08 01:15:27) [GET]
+  [4;35;1mAccount Load (0.7ms)[0m   [0mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+Completed in 19ms (View: 14, DB: 1) | 200 OK [http://localhost/accounts/]
+
+
+Processing AccountsController#destroy (for 127.0.0.1 at 2010-05-08 01:15:35) [DELETE]
+  Parameters: {"authenticity_token"=>"CE6e5eJ6JJf12DVoSTycyk0o4D+AQ/yzz5bihBx4mGI=", "id"=>"4"}
+  [4;36;1mAccount Load (0.2ms)[0m   [0;1mSELECT * FROM "accounts" WHERE ("accounts"."id" = 4) [0m
+  [4;35;1mAccount Destroy (0.3ms)[0m   [0mDELETE FROM "accounts" WHERE "id" = 4[0m
+Redirected to http://localhost:3000/accounts
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/accounts/4]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-05-08 01:15:35) [GET]
+  [4;36;1mAccount Load (0.6ms)[0m   [0;1mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/accounts]
+
+
+Processing AccountsController#destroy (for 127.0.0.1 at 2010-05-08 01:15:43) [DELETE]
+  Parameters: {"authenticity_token"=>"CE6e5eJ6JJf12DVoSTycyk0o4D+AQ/yzz5bihBx4mGI=", "id"=>"5"}
+  [4;35;1mAccount Load (0.2ms)[0m   [0mSELECT * FROM "accounts" WHERE ("accounts"."id" = 5) [0m
+  [4;36;1mAccount Destroy (0.3ms)[0m   [0;1mDELETE FROM "accounts" WHERE "id" = 5[0m
+Redirected to http://localhost:3000/accounts
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/accounts/5]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-05-08 01:15:43) [GET]
+  [4;35;1mAccount Load (0.6ms)[0m   [0mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://localhost/accounts]
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2010-05-08 01:15:51) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+  [4;36;1mAccountGroup Load (0.3ms)[0m   [0;1mSELECT * FROM "account_groups" [0m
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/accounts/new]
+
+
+Processing AccountsController#create (for 127.0.0.1 at 2010-05-08 01:15:55) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"CE6e5eJ6JJf12DVoSTycyk0o4D+AQ/yzz5bihBx4mGI=", "account"=>{"name"=>"hello", "account_group_id"=>"1"}}
+  [4;35;1mAccount Create (0.3ms)[0m   [0mINSERT INTO "accounts" ("name", "created_at", "updated_at", "account_group_id") VALUES('hello', '2010-05-07 19:45:55', '2010-05-07 19:45:55', 1)[0m
+Redirected to http://localhost:3000/accounts/6
+Completed in 11ms (DB: 0) | 302 Found [http://localhost/accounts]
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2010-05-08 01:15:55) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mAccount Load (0.2ms)[0m   [0;1mSELECT * FROM "accounts" WHERE ("accounts"."id" = 6) [0m
+Rendering template within layouts/accounts
+Rendering accounts/show
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/accounts/6]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-05-08 01:15:56) [GET]
+  [4;35;1mAccount Load (0.6ms)[0m   [0mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+  [4;36;1mAccountGroup Load (0.3ms)[0m   [0;1mSELECT * FROM "account_groups" WHERE ("account_groups"."id" = 1) [0m
+Completed in 81ms (View: 15, DB: 1) | 200 OK [http://localhost/accounts]
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2010-05-08 01:16:00) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+  [4;35;1mAccountGroup Load (0.3ms)[0m   [0mSELECT * FROM "account_groups" [0m
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/accounts/new]
+
+
+Processing AccountsController#create (for 127.0.0.1 at 2010-05-08 01:16:06) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"CE6e5eJ6JJf12DVoSTycyk0o4D+AQ/yzz5bihBx4mGI=", "account"=>{"name"=>"world", "account_group_id"=>"2"}}
+  [4;36;1mAccount Create (0.4ms)[0m   [0;1mINSERT INTO "accounts" ("name", "created_at", "updated_at", "account_group_id") VALUES('world', '2010-05-07 19:46:06', '2010-05-07 19:46:06', 2)[0m
+Redirected to http://localhost:3000/accounts/7
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/accounts]
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2010-05-08 01:16:06) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mAccount Load (0.2ms)[0m   [0mSELECT * FROM "accounts" WHERE ("accounts"."id" = 7) [0m
+Rendering template within layouts/accounts
+Rendering accounts/show
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/accounts/7]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-05-08 01:16:07) [GET]
+  [4;36;1mAccount Load (60.7ms)[0m   [0;1mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+  [4;35;1mAccountGroup Load (0.2ms)[0m   [0mSELECT * FROM "account_groups" WHERE ("account_groups"."id" = 1) [0m
+  [4;36;1mAccountGroup Load (0.3ms)[0m   [0;1mSELECT * FROM "account_groups" WHERE ("account_groups"."id" = 2) [0m
+Completed in 81ms (View: 15, DB: 61) | 200 OK [http://localhost/accounts]
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2010-05-08 01:17:05) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+ERROR: compiling _run_erb_app47views47accounts47new46html46erb RAISED compile error
+/Users/amitghidia/acc/app/views/accounts/new.html.erb:9: syntax error, unexpected '<'
+    <%= f.text_field :name ).to_s);...
+     ^
+/Users/amitghidia/acc/app/views/accounts/new.html.erb:23: syntax error, unexpected tIDENTIFIER, expecting ')'
+Function body:           def _run_erb_app47views47accounts47new46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>New account</h1>\n\n"
+
+;  form_for(@account) do |f| ; @output_buffer.concat "\n  "
+; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :name ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( render :partial>
+    <%= f.text_field :name ).to_s); @output_buffer.concat "\n  </p>\n    <p>\n      "
+
+
+; @output_buffer.concat(( f.collection_select :account_group_id, AccountGroup.all, :id, :name ).to_s); @output_buffer.concat "\n\n    </p>\n  <p>\n    "
+
+
+
+; @output_buffer.concat(( f.submit 'Create' ).to_s); @output_buffer.concat "\n  </p>\n"
+
+;  end ; @output_buffer.concat "\n\n"
+
+; @output_buffer.concat(( link_to 'Back', accounts_path ).to_s); @output_buffer.concat "\n"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/amitghidia/acc/app/views/accounts/new.html.erb:24:in `compile!'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:61:in `compile'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:28:in `render'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:260:in `render'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:343:in `_render_with_layout'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:257:in `render'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/amitghidia/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/amitghidia/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:135:in `send'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:135:in `custom'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:179:in `call'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:179:in `respond'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:173:in `each'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:173:in `respond'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/amitghidia/acc/app/controllers/accounts_controller.rb:30:in `new'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1331:in `send'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/amitghidia/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/amitghidia/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `send'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:606:in `process'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:391:in `process'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:386:in `call'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/amitghidia/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/amitghidia/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/amitghidia/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/amitghidia/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+/Users/amitghidia/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+/Users/amitghidia/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/amitghidia/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/amitghidia/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Users/amitghidia/.gem/ruby/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/amitghidia/acc/app/views/accounts/new.html.erb:9: syntax error, unexpected '<'
+    <%= f.text_field :name ).to_s);...
+     ^
+/Users/amitghidia/acc/app/views/accounts/new.html.erb:23: syntax error, unexpected tIDENTIFIER, expecting ')') on line #9 of app/views/accounts/new.html.erb:
+6:   <p>
+7:     <%= f.label :name %><br />
+8:     <%= render :partial>
+9:     <%= f.text_field :name %>
+10:   </p>
+11:     <p>
+12:       <%= f.collection_select :account_group_id, AccountGroup.all, :id, :name %>
+
+    app/views/accounts/new.html.erb:24:in `compile!'
+    app/controllers/accounts_controller.rb:30:in `new'
+
+Rendered rescues/_trace (45.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2010-05-08 01:17:18) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+
+ActionView::TemplateError (undefined method `include?' for :partial:Symbol) on line #8 of app/views/accounts/new.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :name %><br />
+8:     <%= render :partial%>
+9:     <%= f.text_field :name %>
+10:   </p>
+11:     <p>
+
+    app/views/accounts/new.html.erb:8
+    app/views/accounts/new.html.erb:3
+    app/controllers/accounts_controller.rb:30:in `new'
+
+Rendered rescues/_trace (50.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)

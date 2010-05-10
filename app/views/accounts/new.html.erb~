@@ -5,7 +5,6 @@
 
   <p>
     <%= f.label :name %><br />
-    <%= render :partial%>
     <%= f.text_field :name %>
   </p>
     <p>
