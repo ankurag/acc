@@ -1,0 +1,11 @@
+<h1>New zonal_area</h1>
+
+<% form_for(@zonal_area) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', zonal_areas_path %>

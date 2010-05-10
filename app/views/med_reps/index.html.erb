@@ -1,0 +1,20 @@
+<h1>Listing med_reps</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+
+<% @med_reps.each do |med_rep| %>
+  <tr>
+    <td><%=h med_rep.name %></td>
+    <td><%= link_to 'Show', med_rep %></td>
+    <td><%= link_to 'Edit', edit_med_rep_path(med_rep) %></td>
+    <td><%= link_to 'Destroy', med_rep, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New med_rep', new_med_rep_path %>

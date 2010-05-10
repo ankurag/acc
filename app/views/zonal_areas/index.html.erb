@@ -1,0 +1,18 @@
+<h1>Listing zonal_areas</h1>
+
+<table>
+  <tr>
+  </tr>
+
+<% @zonal_areas.each do |zonal_area| %>
+  <tr>
+    <td><%= link_to 'Show', zonal_area %></td>
+    <td><%= link_to 'Edit', edit_zonal_area_path(zonal_area) %></td>
+    <td><%= link_to 'Destroy', zonal_area, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New zonal_area', new_zonal_area_path %>

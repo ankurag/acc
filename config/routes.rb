@@ -1,4 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :zonal_areas
+
+  map.resources :med_reps
+
   map.resources :abcs
 
   map.resources :sundry_debtors
