@@ -1,0 +1,1879 @@
+  [4;36;1mAccount Load (0.0ms)[0m   [0;1mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/accounts]
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2010-05-05 14:28:36) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+  [4;35;1mAccountGroup Load (0.0ms)[0m   [0mSELECT * FROM "account_groups" [0m
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/accounts/new]
+
+
+Processing AccountsController#create (for 127.0.0.1 at 2010-05-05 14:28:39) [POST]
+  Parameters: {"commit"=>"Create", "account"=>{"name"=>"fff"}, "authenticity_token"=>"sRucyusFUZOXFxgFfa3oJ2xBFhBy1CteQXvIFvviaq8=", "account group "=>"1"}
+  [4;36;1mAccount Create (0.0ms)[0m   [0;1mINSERT INTO "accounts" ("name", "updated_at", "created_at") VALUES('fff', '2010-05-05 08:58:39', '2010-05-05 08:58:39')[0m
+Redirected to http://localhost:3000/accounts/4
+Completed in 109ms (DB: 0) | 302 Found [http://localhost/accounts]
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2010-05-05 14:28:40) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mAccount Load (16.0ms)[0m   [0mSELECT * FROM "accounts" WHERE ("accounts"."id" = 4) [0m
+Rendering template within layouts/accounts
+Rendering accounts/show
+Completed in 16ms (View: 0, DB: 16) | 200 OK [http://localhost/accounts/4]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-05-05 14:29:02) [GET]
+  [4;36;1mAccount Load (0.0ms)[0m   [0;1mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/accounts]
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2010-05-05 14:29:17) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+  [4;35;1mAccountGroup Load (0.0ms)[0m   [0mSELECT * FROM "account_groups" [0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/accounts/new]
+
+
+Processing AccountsController#create (for 127.0.0.1 at 2010-05-05 14:29:27) [POST]
+  Parameters: {"commit"=>"Create", "account"=>{"name"=>"sadfa"}, "authenticity_token"=>"sRucyusFUZOXFxgFfa3oJ2xBFhBy1CteQXvIFvviaq8=", "account group "=>"1"}
+  [4;36;1mAccount Create (0.0ms)[0m   [0;1mINSERT INTO "accounts" ("name", "updated_at", "created_at") VALUES('sadfa', '2010-05-05 08:59:27', '2010-05-05 08:59:27')[0m
+Redirected to http://localhost:3000/accounts/5
+Completed in 109ms (DB: 0) | 302 Found [http://localhost/accounts]
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2010-05-05 14:29:27) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mAccount Load (0.0ms)[0m   [0mSELECT * FROM "accounts" WHERE ("accounts"."id" = 5) [0m
+Rendering template within layouts/accounts
+Rendering accounts/show
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/accounts/5]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-05-05 14:29:43) [GET]
+  [4;36;1mAccount Load (0.0ms)[0m   [0;1mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/accounts]
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2010-05-05 14:29:45) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+  [4;35;1mAccountGroup Load (0.0ms)[0m   [0mSELECT * FROM "account_groups" [0m
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://localhost/accounts/new]
+
+
+Processing AccountsController#create (for 127.0.0.1 at 2010-05-05 14:29:49) [POST]
+  Parameters: {"commit"=>"Create", "account"=>{"name"=>"111"}, "authenticity_token"=>"sRucyusFUZOXFxgFfa3oJ2xBFhBy1CteQXvIFvviaq8=", "account group "=>"1"}
+  [4;36;1mAccount Create (0.0ms)[0m   [0;1mINSERT INTO "accounts" ("name", "updated_at", "created_at") VALUES('111', '2010-05-05 08:59:49', '2010-05-05 08:59:49')[0m
+Redirected to http://localhost:3000/accounts/6
+Completed in 94ms (DB: 0) | 302 Found [http://localhost/accounts]
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2010-05-05 14:29:49) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mAccount Load (0.0ms)[0m   [0mSELECT * FROM "accounts" WHERE ("accounts"."id" = 6) [0m
+Rendering template within layouts/accounts
+Rendering accounts/show
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/accounts/6]
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2010-05-05 14:30:05) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mAccount Load (0.0ms)[0m   [0;1mSELECT * FROM "accounts" WHERE ("accounts"."id" = 6) [0m
+Rendering template within layouts/accounts
+Rendering accounts/show
+Completed in 62ms (View: 16, DB: 0) | 200 OK [http://localhost/accounts/6]
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2010-05-05 14:30:06) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mAccount Load (0.0ms)[0m   [0mSELECT * FROM "accounts" WHERE ("accounts"."id" = 6) [0m
+Rendering template within layouts/accounts
+Rendering accounts/show
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/accounts/6]
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2010-05-05 14:30:58) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mAccount Load (0.0ms)[0m   [0;1mSELECT * FROM "accounts" WHERE ("accounts"."id" = 6) [0m
+Rendering template within layouts/accounts
+Rendering accounts/show
+Completed in 171ms (View: 125, DB: 0) | 200 OK [http://localhost/accounts/6]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-05-05 14:31:02) [GET]
+  [4;35;1mAccount Load (0.0ms)[0m   [0mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+Completed in 37016ms (View: 94, DB: 0) | 200 OK [http://localhost/accounts]
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2010-05-05 14:31:48) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+  [4;36;1mAccountGroup Load (16.0ms)[0m   [0;1mSELECT * FROM "account_groups" [0m
+Completed in 157ms (View: 125, DB: 16) | 200 OK [http://localhost/accounts/new]
+
+
+Processing AccountsController#create (for 127.0.0.1 at 2010-05-05 14:31:54) [POST]
+  Parameters: {"commit"=>"Create", "account"=>{"name"=>"123"}, "authenticity_token"=>"sRucyusFUZOXFxgFfa3oJ2xBFhBy1CteQXvIFvviaq8=", "account group "=>"1"}
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-05-05 19:19:12) [GET]
+  [4;36;1mAccount Load (0.0ms)[0m   [0;1mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+Completed in 843ms (View: 765, DB: 0) | 200 OK [http://localhost/accounts]
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2010-05-05 19:19:20) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+  [4;35;1mAccountGroup Load (0.0ms)[0m   [0mSELECT * FROM "account_groups" [0m
+Completed in 157ms (View: 94, DB: 0) | 200 OK [http://localhost/accounts/new]
+
+
+Processing AccountsController#create (for 127.0.0.1 at 2010-05-05 19:19:23) [POST]
+  Parameters: {"commit"=>"Create", "account"=>{"name"=>"ddd"}, "authenticity_token"=>"i45S/oX8Ya2O/x/TSu0s2LDF6BB/ESHxupH503gewuc=", "account group "=>"1"}
+  [4;36;1mAccount Create (0.0ms)[0m   [0;1mINSERT INTO "accounts" ("name", "updated_at", "created_at") VALUES('ddd', '2010-05-05 13:49:23', '2010-05-05 13:49:23')[0m
+Redirected to http://localhost:3000/accounts/7
+Completed in 110ms (DB: 0) | 302 Found [http://localhost/accounts]
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2010-05-05 19:19:23) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mAccount Load (0.0ms)[0m   [0mSELECT * FROM "accounts" WHERE ("accounts"."id" = 7) [0m
+Rendering template within layouts/accounts
+Rendering accounts/show
+Completed in 141ms (View: 125, DB: 0) | 200 OK [http://localhost/accounts/7]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-05-05 19:19:43) [GET]
+  [4;36;1mAccount Load (0.0ms)[0m   [0;1mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://localhost/accounts]
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2010-05-05 19:19:44) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+  [4;35;1mAccountGroup Load (0.0ms)[0m   [0mSELECT * FROM "account_groups" [0m
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://localhost/accounts/new]
+
+
+Processing AccountsController#create (for 127.0.0.1 at 2010-05-05 19:19:46) [POST]
+  Parameters: {"commit"=>"Create", "account"=>{"name"=>"dd"}, "authenticity_token"=>"i45S/oX8Ya2O/x/TSu0s2LDF6BB/ESHxupH503gewuc=", "account group "=>"1"}
+  [4;36;1mAccount Create (0.0ms)[0m   [0;1mINSERT INTO "accounts" ("name", "updated_at", "created_at") VALUES('dd', '2010-05-05 13:50:29', '2010-05-05 13:50:29')[0m
+Redirected to http://localhost:3000/accounts/8
+Completed in 50219ms (DB: 0) | 302 Found [http://localhost/accounts]
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2010-05-05 19:20:44) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mAccount Load (0.0ms)[0m   [0mSELECT * FROM "accounts" WHERE ("accounts"."id" = 8) [0m
+Rendering template within layouts/accounts
+Rendering accounts/show
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/accounts/8]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-05-05 19:20:48) [GET]
+  [4;36;1mAccount Load (0.0ms)[0m   [0;1mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://localhost/accounts]
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2010-05-05 19:20:50) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+  [4;35;1mAccountGroup Load (0.0ms)[0m   [0mSELECT * FROM "account_groups" [0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/accounts/new]
+
+
+Processing AccountsController#create (for 127.0.0.1 at 2010-05-05 19:20:53) [POST]
+  Parameters: {"commit"=>"Create", "account"=>{"name"=>"12344"}, "authenticity_token"=>"i45S/oX8Ya2O/x/TSu0s2LDF6BB/ESHxupH503gewuc=", "account group "=>"1"}
+  [4;36;1mAccount Create (0.0ms)[0m   [0;1mINSERT INTO "accounts" ("name", "updated_at", "created_at") VALUES('12344', '2010-05-05 13:51:48', '2010-05-05 13:51:48')[0m
+Redirected to http://localhost:3000/accounts/9
+Completed in 54640ms (DB: 0) | 302 Found [http://localhost/accounts]
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2010-05-05 19:21:48) [GET]
+  Parameters: {"id"=>"9"}
+  [4;35;1mAccount Load (0.0ms)[0m   [0mSELECT * FROM "accounts" WHERE ("accounts"."id" = 9) [0m
+Rendering template within layouts/accounts
+Rendering accounts/show
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/accounts/9]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-05-05 19:22:57) [GET]
+  [4;36;1mAccount Load (0.0ms)[0m   [0;1mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+Completed in 93ms (View: 78, DB: 0) | 200 OK [http://localhost/accounts]
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2010-05-05 19:22:58) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+  [4;35;1mAccountGroup Load (0.0ms)[0m   [0mSELECT * FROM "account_groups" [0m
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://localhost/accounts/new]
+
+
+Processing AccountsController#create (for 127.0.0.1 at 2010-05-05 19:23:01) [POST]
+  Parameters: {"commit"=>"Create", "account"=>{"name"=>"fff"}, "authenticity_token"=>"i45S/oX8Ya2O/x/TSu0s2LDF6BB/ESHxupH503gewuc=", "account group "=>"1"}
+  [4;36;1mSQL (31.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (62.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (63.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (15.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateAddresses (20100505080115)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "addresses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "street_address_1" varchar(255), "street_address_2" varchar(255), "city" varchar(255), "district" varchar(255), "state" varchar(255), "pincode" varchar(255), "tin_no" varchar(255), "pan_no" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100505080115')[0m
+Migrating to CreateTelephones (20100505080219)
+  [4;36;1mSQL (15.0ms)[0m   [0;1mCREATE TABLE "telephones" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "number" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100505080219')[0m
+Migrating to CreateAccountGroups (20100505080256)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "account_groups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100505080256')[0m
+Migrating to CreateAccounts (20100505080315)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "accounts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100505080315')[0m
+Migrating to CreateJournalEntries (20100505080347)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "journal_entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "narration" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100505080347')[0m
+Migrating to CreateJournalLines (20100505080407)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "journal_lines" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "amount" decimal, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100505080407')[0m
+Migrating to CreateProducts (20100505080506)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "purchase_price" decimal, "sale_price" decimal, "vat_percent" decimal, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100505080506')[0m
+Migrating to CreateItems (20100505080600)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "sale_price" decimal, "purchase_price" decimal, "quantity" decimal, "batch_no" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100505080600')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("account_groups")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("accounts")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("addresses")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("items")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("journal_entries")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("journal_lines")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("products")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("telephones")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateAddresses (20100505080115)
+Migrating to CreateTelephones (20100505080219)
+Migrating to CreateAccountGroups (20100505080256)
+Migrating to CreateAccounts (20100505080315)
+Migrating to CreateJournalEntries (20100505080347)
+Migrating to CreateJournalLines (20100505080407)
+Migrating to CreateProducts (20100505080506)
+Migrating to CreateItems (20100505080600)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("account_groups")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("accounts")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("addresses")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("items")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("journal_entries")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("journal_lines")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("products")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("telephones")[0m
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-05-07 14:14:29) [GET]
+  [4;36;1mAccount Load (0.0ms)[0m   [0;1mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+Completed in 1672ms (View: 1640, DB: 0) | 200 OK [http://localhost/accounts]
+
+
+Processing AccountGroupsController#index (for 127.0.0.1 at 2010-05-07 14:14:37) [GET]
+  [4;35;1mAccountGroup Load (0.0ms)[0m   [0mSELECT * FROM "account_groups" [0m
+Rendering template within layouts/account_groups
+Rendering account_groups/index
+Completed in 109ms (View: 93, DB: 0) | 200 OK [http://localhost/account_groups]
+
+
+Processing AccountGroupsController#new (for 127.0.0.1 at 2010-05-07 14:14:38) [GET]
+Rendering template within layouts/account_groups
+Rendering account_groups/new
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/account_groups/new]
+
+
+Processing AccountGroupsController#create (for 127.0.0.1 at 2010-05-07 14:14:41) [POST]
+  Parameters: {"commit"=>"Create", "account_group"=>{"name"=>"abc"}, "authenticity_token"=>"+xz1Us7e92t104Xr0xeOXdLDCqrXNf4+Hk+Tcy0T7Ow="}
+  [4;36;1mAccountGroup Create (0.0ms)[0m   [0;1mINSERT INTO "account_groups" ("name", "updated_at", "created_at") VALUES('abc', '2010-05-07 08:44:41', '2010-05-07 08:44:41')[0m
+Redirected to http://localhost:3000/account_groups/1
+Completed in 78ms (DB: 0) | 302 Found [http://localhost/account_groups]
+
+
+Processing AccountGroupsController#show (for 127.0.0.1 at 2010-05-07 14:14:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAccountGroup Load (0.0ms)[0m   [0mSELECT * FROM "account_groups" WHERE ("account_groups"."id" = 1) [0m
+Rendering template within layouts/account_groups
+Rendering account_groups/show
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/account_groups/1]
+
+
+Processing AccountGroupsController#index (for 127.0.0.1 at 2010-05-07 14:14:43) [GET]
+  [4;36;1mAccountGroup Load (0.0ms)[0m   [0;1mSELECT * FROM "account_groups" [0m
+Rendering template within layouts/account_groups
+Rendering account_groups/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/account_groups]
+
+
+Processing AccountGroupsController#new (for 127.0.0.1 at 2010-05-07 14:14:45) [GET]
+Rendering template within layouts/account_groups
+Rendering account_groups/new
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/account_groups/new]
+
+
+Processing AccountGroupsController#create (for 127.0.0.1 at 2010-05-07 14:14:47) [POST]
+  Parameters: {"commit"=>"Create", "account_group"=>{"name"=>"123"}, "authenticity_token"=>"+xz1Us7e92t104Xr0xeOXdLDCqrXNf4+Hk+Tcy0T7Ow="}
+  [4;35;1mAccountGroup Create (0.0ms)[0m   [0mINSERT INTO "account_groups" ("name", "updated_at", "created_at") VALUES('123', '2010-05-07 08:44:47', '2010-05-07 08:44:47')[0m
+Redirected to http://localhost:3000/account_groups/2
+Completed in 94ms (DB: 0) | 302 Found [http://localhost/account_groups]
+
+
+Processing AccountGroupsController#show (for 127.0.0.1 at 2010-05-07 14:14:48) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mAccountGroup Load (0.0ms)[0m   [0;1mSELECT * FROM "account_groups" WHERE ("account_groups"."id" = 2) [0m
+Rendering template within layouts/account_groups
+Rendering account_groups/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/account_groups/2]
+
+
+Processing AccountGroupsController#index (for 127.0.0.1 at 2010-05-07 14:14:49) [GET]
+  [4;35;1mAccountGroup Load (0.0ms)[0m   [0mSELECT * FROM "account_groups" [0m
+Rendering template within layouts/account_groups
+Rendering account_groups/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/account_groups]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-05-07 14:14:53) [GET]
+  [4;36;1mAccount Load (0.0ms)[0m   [0;1mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/accounts]
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2010-05-07 14:14:55) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+  [4;35;1mAccountGroup Load (0.0ms)[0m   [0mSELECT * FROM "account_groups" [0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/accounts/new]
+
+
+Processing AccountsController#create (for 127.0.0.1 at 2010-05-07 14:15:04) [POST]
+  Parameters: {"commit"=>"Create", "account"=>{"name"=>"ankur"}, "authenticity_token"=>"+xz1Us7e92t104Xr0xeOXdLDCqrXNf4+Hk+Tcy0T7Ow=", "account group "=>"1"}
+  [4;36;1mAccount Create (15.0ms)[0m   [0;1mINSERT INTO "accounts" ("name", "updated_at", "created_at") VALUES('ankur', '2010-05-07 08:45:05', '2010-05-07 08:45:05')[0m
+Redirected to http://localhost:3000/accounts/1
+Completed in 219ms (DB: 15) | 302 Found [http://localhost/accounts]
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2010-05-07 14:15:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAccount Load (0.0ms)[0m   [0mSELECT * FROM "accounts" WHERE ("accounts"."id" = 1) [0m
+Rendering template within layouts/accounts
+Rendering accounts/show
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/accounts/1]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-05-07 14:15:07) [GET]
+  [4;36;1mAccount Load (0.0ms)[0m   [0;1mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/accounts]
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2010-05-07 14:15:11) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+  [4;35;1mAccountGroup Load (0.0ms)[0m   [0mSELECT * FROM "account_groups" [0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/accounts/new]
+
+
+Processing AccountsController#create (for 127.0.0.1 at 2010-05-07 14:15:15) [POST]
+  Parameters: {"commit"=>"Create", "account"=>{"name"=>"agarwa"}, "authenticity_token"=>"+xz1Us7e92t104Xr0xeOXdLDCqrXNf4+Hk+Tcy0T7Ow=", "account group "=>"2"}
+  [4;36;1mAccount Create (0.0ms)[0m   [0;1mINSERT INTO "accounts" ("name", "updated_at", "created_at") VALUES('agarwa', '2010-05-07 08:45:15', '2010-05-07 08:45:15')[0m
+Redirected to http://localhost:3000/accounts/2
+Completed in 94ms (DB: 0) | 302 Found [http://localhost/accounts]
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2010-05-07 14:15:15) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mAccount Load (0.0ms)[0m   [0mSELECT * FROM "accounts" WHERE ("accounts"."id" = 2) [0m
+Rendering template within layouts/accounts
+Rendering accounts/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/accounts/2]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-05-07 14:15:17) [GET]
+  [4;36;1mAccount Load (16.0ms)[0m   [0;1mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+Completed in 32ms (View: 16, DB: 16) | 200 OK [http://localhost/accounts]
+
+
+Processing AccountsController#edit (for 127.0.0.1 at 2010-05-07 14:15:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAccount Load (0.0ms)[0m   [0mSELECT * FROM "accounts" WHERE ("accounts"."id" = 1) [0m
+Rendering template within layouts/accounts
+Rendering accounts/edit
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://localhost/accounts/1/edit]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-05-07 14:15:56) [GET]
+  [4;36;1mAccount Load (16.0ms)[0m   [0;1mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+Completed in 32ms (View: 16, DB: 16) | 200 OK [http://localhost/accounts]
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2010-05-07 14:17:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAccount Load (0.0ms)[0m   [0mSELECT * FROM "accounts" WHERE ("accounts"."id" = 1) [0m
+Rendering template within layouts/accounts
+Rendering accounts/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/accounts/1]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-05-07 14:17:59) [GET]
+  [4;36;1mAccount Load (0.0ms)[0m   [0;1mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/accounts]
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2010-05-07 14:18:01) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mAccount Load (0.0ms)[0m   [0mSELECT * FROM "accounts" WHERE ("accounts"."id" = 2) [0m
+Rendering template within layouts/accounts
+Rendering accounts/show
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/accounts/2]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-05-07 14:18:02) [GET]
+  [4;36;1mAccount Load (0.0ms)[0m   [0;1mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/accounts]
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2010-05-07 14:19:23) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mAccount Load (15.0ms)[0m   [0;1mSELECT * FROM "accounts" WHERE ("accounts"."id" = 2) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateAddresses (20100505080115)
+Migrating to CreateTelephones (20100505080219)
+Migrating to CreateAccountGroups (20100505080256)
+Migrating to CreateAccounts (20100505080315)
+Migrating to CreateJournalEntries (20100505080347)
+Migrating to CreateJournalLines (20100505080407)
+Migrating to CreateProducts (20100505080506)
+Migrating to CreateItems (20100505080600)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("account_groups")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("accounts")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("addresses")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("items")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("journal_entries")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("journal_lines")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("products")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("telephones")[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-07 14:35:06) [GET]
+
+ActionController::RoutingError (No route matches "/account_group" with {:method=>:get}):
+  C:/Ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+  C:/Ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+  C:/Ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+  C:\Ruby\bin/rdebug-ide:19:in `load'
+  C:\Ruby\bin/rdebug-ide:19
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing AccountGroupsController#index (for 127.0.0.1 at 2010-05-07 14:35:10) [GET]
+  [4;36;1mAccountGroup Load (0.0ms)[0m   [0;1mSELECT * FROM "account_groups" [0m
+Rendering template within layouts/account_groups
+Rendering account_groups/index
+Completed in 390ms (View: 328, DB: 0) | 200 OK [http://localhost/account_groups]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-05-07 14:35:20) [GET]
+  [4;35;1mAccount Load (0.0ms)[0m   [0mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+Completed in 63ms (View: 47, DB: 0) | 200 OK [http://localhost/accounts]
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2010-05-07 14:35:22) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+  [4;36;1mAccountGroup Load (0.0ms)[0m   [0;1mSELECT * FROM "account_groups" [0m
+Completed in 188ms (View: 157, DB: 0) | 200 OK [http://localhost/accounts/new]
+
+
+Processing AccountsController#create (for 127.0.0.1 at 2010-05-07 14:35:25) [POST]
+  Parameters: {"commit"=>"Create", "account"=>{"name"=>"aaa"}, "authenticity_token"=>"+xz1Us7e92t104Xr0xeOXdLDCqrXNf4+Hk+Tcy0T7Ow=", "account group "=>"1"}
+  [4;35;1mAccount Create (15.0ms)[0m   [0mINSERT INTO "accounts" ("name", "updated_at", "created_at") VALUES('aaa', '2010-05-07 09:07:15', '2010-05-07 09:07:15')[0m
+Redirected to http://localhost:3000/accounts/3
+Completed in 110156ms (DB: 15) | 302 Found [http://localhost/accounts]
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2010-05-07 14:37:15) [GET]
+  Parameters: {"id"=>"3"}
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2009-05-07 15:40:43) [GET]
+  [4;36;1mAccount Load (0.0ms)[0m   [0;1mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+Completed in 859ms (View: 765, DB: 0) | 200 OK [http://localhost/accounts]
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2009-05-07 15:40:46) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+  [4;35;1mAccountGroup Load (0.0ms)[0m   [0mSELECT * FROM "account_groups" [0m
+
+ActionView::TemplateError (undefined method `account_group_id' for #<Account id: nil, name: nil, created_at: nil, updated_at: nil>) on line #11 of app/views/accounts/new.html.erb:
+8:     <%= f.text_field :name %>
+9:   </p>
+10:     <p>
+11:       <%= f.collection_select :account_group_id, AccountGroup.all, :id, :name %>
+12: 
+13:     </p>
+14:   <p>
+
+    app/views/accounts/new.html.erb:11
+    app/views/accounts/new.html.erb:3
+    app/controllers/accounts_controller.rb:30:in `new'
+    C:/Ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+    C:/Ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+    C:/Ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+    C:\Ruby\bin/rdebug-ide:19:in `load'
+    C:\Ruby\bin/rdebug-ide:19
+    -e:1:in `load'
+    -e:1
+
+Rendered rescues/_trace (218.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateAddresses (20100505080115)
+Migrating to CreateTelephones (20100505080219)
+Migrating to CreateAccountGroups (20100505080256)
+Migrating to CreateAccounts (20100505080315)
+Migrating to CreateJournalEntries (20100505080347)
+Migrating to CreateJournalLines (20100505080407)
+Migrating to CreateProducts (20100505080506)
+Migrating to CreateItems (20100505080600)
+  [4;36;1mSQL (16.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("account_groups")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("accounts")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("addresses")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("items")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("journal_entries")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("journal_lines")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("products")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("telephones")[0m
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2009-05-07 15:42:09) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+  [4;36;1mAccountGroup Load (0.0ms)[0m   [0;1mSELECT * FROM "account_groups" [0m
+
+ActionView::TemplateError (undefined method `account_group_id' for #<Account id: nil, name: nil, created_at: nil, updated_at: nil>) on line #11 of app/views/accounts/new.html.erb:
+8:     <%= f.text_field :name %>
+9:   </p>
+10:     <p>
+11:       <%= f.collection_select :account_group_id, AccountGroup.all, :id, :name %>
+12: 
+13:     </p>
+14:   <p>
+
+    app/views/accounts/new.html.erb:11
+    app/views/accounts/new.html.erb:3
+    app/controllers/accounts_controller.rb:30:in `new'
+    -e:1:in `load'
+    -e:1
+
+Rendered rescues/_trace (93.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2009-05-07 15:42:10) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+  [4;35;1mAccountGroup Load (0.0ms)[0m   [0mSELECT * FROM "account_groups" [0m
+
+ActionView::TemplateError (undefined method `account_group_id' for #<Account id: nil, name: nil, created_at: nil, updated_at: nil>) on line #11 of app/views/accounts/new.html.erb:
+8:     <%= f.text_field :name %>
+9:   </p>
+10:     <p>
+11:       <%= f.collection_select :account_group_id, AccountGroup.all, :id, :name %>
+12: 
+13:     </p>
+14:   <p>
+
+    app/views/accounts/new.html.erb:11
+    app/views/accounts/new.html.erb:3
+    app/controllers/accounts_controller.rb:30:in `new'
+    -e:1:in `load'
+    -e:1
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2009-05-07 15:42:11) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+  [4;36;1mAccountGroup Load (0.0ms)[0m   [0;1mSELECT * FROM "account_groups" [0m
+
+ActionView::TemplateError (undefined method `account_group_id' for #<Account id: nil, name: nil, created_at: nil, updated_at: nil>) on line #11 of app/views/accounts/new.html.erb:
+8:     <%= f.text_field :name %>
+9:   </p>
+10:     <p>
+11:       <%= f.collection_select :account_group_id, AccountGroup.all, :id, :name %>
+12: 
+13:     </p>
+14:   <p>
+
+    app/views/accounts/new.html.erb:11
+    app/views/accounts/new.html.erb:3
+    app/controllers/accounts_controller.rb:30:in `new'
+    -e:1:in `load'
+    -e:1
+
+Rendered rescues/_trace (187.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (62.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateAddresses (20100505080115)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "addresses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "street_address_1" varchar(255), "street_address_2" varchar(255), "city" varchar(255), "district" varchar(255), "state" varchar(255), "pincode" varchar(255), "tin_no" varchar(255), "pan_no" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100505080115')[0m
+Migrating to CreateTelephones (20100505080219)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "telephones" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "number" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100505080219')[0m
+Migrating to CreateAccountGroups (20100505080256)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "account_groups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100505080256')[0m
+Migrating to CreateAccounts (20100505080315)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "accounts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "account_group_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100505080315')[0m
+Migrating to CreateJournalEntries (20100505080347)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "journal_entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "narration" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100505080347')[0m
+Migrating to CreateJournalLines (20100505080407)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "journal_lines" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "amount" decimal, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100505080407')[0m
+Migrating to CreateProducts (20100505080506)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "purchase_price" decimal, "sale_price" decimal, "vat_percent" decimal, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100505080506')[0m
+Migrating to CreateItems (20100505080600)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "sale_price" decimal, "purchase_price" decimal, "quantity" decimal, "batch_no" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100505080600')[0m
+  [4;36;1mSQL (15.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("account_groups")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("accounts")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("addresses")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("items")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("journal_entries")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("journal_lines")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("products")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("telephones")[0m
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2009-05-07 15:44:34) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+  [4;36;1mAccountGroup Load (0.0ms)[0m   [0;1mSELECT * FROM "account_groups" [0m
+Completed in 172ms (View: 141, DB: 0) | 200 OK [http://localhost/accounts/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-07 15:44:42) [GET]
+
+ActionController::RoutingError (No route matches "/accounts_groups" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing AccountGroupsController#index (for 127.0.0.1 at 2009-05-07 15:44:47) [GET]
+  [4;35;1mAccountGroup Load (0.0ms)[0m   [0mSELECT * FROM "account_groups" [0m
+Rendering template within layouts/account_groups
+Rendering account_groups/index
+Completed in 110ms (View: 78, DB: 0) | 200 OK [http://localhost/account_groups]
+
+
+Processing AccountGroupsController#new (for 127.0.0.1 at 2009-05-07 15:44:49) [GET]
+Rendering template within layouts/account_groups
+Rendering account_groups/new
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/account_groups/new]
+
+
+Processing AccountGroupsController#create (for 127.0.0.1 at 2009-05-07 15:44:51) [POST]
+  Parameters: {"commit"=>"Create", "account_group"=>{"name"=>"abc"}, "authenticity_token"=>"w77jTxYUdH3GOXUOnvoLXaAPJ+qicC6ADsgDhDekunw="}
+  [4;36;1mAccountGroup Create (0.0ms)[0m   [0;1mINSERT INTO "account_groups" ("name", "updated_at", "created_at") VALUES('abc', '2009-05-07 10:14:51', '2009-05-07 10:14:51')[0m
+Redirected to http://localhost:3000/account_groups/1
+Completed in 78ms (DB: 0) | 302 Found [http://localhost/account_groups]
+
+
+Processing AccountGroupsController#show (for 127.0.0.1 at 2009-05-07 15:44:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAccountGroup Load (0.0ms)[0m   [0mSELECT * FROM "account_groups" WHERE ("account_groups"."id" = 1) [0m
+Rendering template within layouts/account_groups
+Rendering account_groups/show
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/account_groups/1]
+
+
+Processing AccountGroupsController#index (for 127.0.0.1 at 2009-05-07 15:44:53) [GET]
+  [4;36;1mAccountGroup Load (0.0ms)[0m   [0;1mSELECT * FROM "account_groups" [0m
+Rendering template within layouts/account_groups
+Rendering account_groups/index
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/account_groups]
+
+
+Processing AccountGroupsController#new (for 127.0.0.1 at 2009-05-07 15:44:55) [GET]
+Rendering template within layouts/account_groups
+Rendering account_groups/new
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/account_groups/new]
+
+
+Processing AccountGroupsController#create (for 127.0.0.1 at 2009-05-07 15:44:57) [POST]
+  Parameters: {"commit"=>"Create", "account_group"=>{"name"=>"123"}, "authenticity_token"=>"w77jTxYUdH3GOXUOnvoLXaAPJ+qicC6ADsgDhDekunw="}
+  [4;35;1mAccountGroup Create (0.0ms)[0m   [0mINSERT INTO "account_groups" ("name", "updated_at", "created_at") VALUES('123', '2009-05-07 10:14:57', '2009-05-07 10:14:57')[0m
+Redirected to http://localhost:3000/account_groups/2
+Completed in 63ms (DB: 0) | 302 Found [http://localhost/account_groups]
+
+
+Processing AccountGroupsController#show (for 127.0.0.1 at 2009-05-07 15:44:58) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mAccountGroup Load (0.0ms)[0m   [0;1mSELECT * FROM "account_groups" WHERE ("account_groups"."id" = 2) [0m
+Rendering template within layouts/account_groups
+Rendering account_groups/show
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/account_groups/2]
+
+
+Processing AccountGroupsController#index (for 127.0.0.1 at 2009-05-07 15:44:59) [GET]
+  [4;35;1mAccountGroup Load (16.0ms)[0m   [0mSELECT * FROM "account_groups" [0m
+Rendering template within layouts/account_groups
+Rendering account_groups/index
+Completed in 31ms (View: 15, DB: 16) | 200 OK [http://localhost/account_groups]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2009-05-07 15:45:02) [GET]
+  [4;36;1mAccount Load (0.0ms)[0m   [0;1mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+Completed in 93ms (View: 78, DB: 0) | 200 OK [http://localhost/accounts]
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2009-05-07 15:45:04) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+  [4;35;1mAccountGroup Load (0.0ms)[0m   [0mSELECT * FROM "account_groups" [0m
+Completed in 156ms (View: 125, DB: 0) | 200 OK [http://localhost/accounts/new]
+
+
+Processing AccountsController#create (for 127.0.0.1 at 2009-05-07 15:45:08) [POST]
+  Parameters: {"commit"=>"Create", "account"=>{"name"=>"aaa", "account_group_id"=>"2"}, "authenticity_token"=>"w77jTxYUdH3GOXUOnvoLXaAPJ+qicC6ADsgDhDekunw="}
+  [4;36;1mAccount Create (0.0ms)[0m   [0;1mINSERT INTO "accounts" ("name", "updated_at", "account_group_id", "created_at") VALUES('aaa', '2009-05-07 10:15:08', NULL, '2009-05-07 10:15:08')[0m
+Redirected to http://localhost:3000/accounts/1
+Completed in 250ms (DB: 0) | 302 Found [http://localhost/accounts]
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2009-05-07 15:45:09) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAccount Load (0.0ms)[0m   [0mSELECT * FROM "accounts" WHERE ("accounts"."id" = 1) [0m
+Rendering template within layouts/accounts
+Rendering accounts/show
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/accounts/1]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2009-05-07 15:45:11) [GET]
+  [4;36;1mAccount Load (0.0ms)[0m   [0;1mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/accounts]
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2009-05-07 15:45:12) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+  [4;35;1mAccountGroup Load (0.0ms)[0m   [0mSELECT * FROM "account_groups" [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/accounts/new]
+
+
+Processing AccountsController#create (for 127.0.0.1 at 2009-05-07 15:45:15) [POST]
+  Parameters: {"commit"=>"Create", "account"=>{"name"=>"bbb", "account_group_id"=>"1"}, "authenticity_token"=>"w77jTxYUdH3GOXUOnvoLXaAPJ+qicC6ADsgDhDekunw="}
+  [4;36;1mAccount Create (0.0ms)[0m   [0;1mINSERT INTO "accounts" ("name", "updated_at", "account_group_id", "created_at") VALUES('bbb', '2009-05-07 10:15:15', NULL, '2009-05-07 10:15:15')[0m
+Redirected to http://localhost:3000/accounts/2
+Completed in 94ms (DB: 0) | 302 Found [http://localhost/accounts]
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2009-05-07 15:45:15) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mAccount Load (0.0ms)[0m   [0mSELECT * FROM "accounts" WHERE ("accounts"."id" = 2) [0m
+Rendering template within layouts/accounts
+Rendering accounts/show
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/accounts/2]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2009-05-07 15:46:30) [GET]
+  [4;36;1mAccount Load (0.0ms)[0m   [0;1mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+Completed in 63ms (View: 31, DB: 0) | 200 OK [http://localhost/accounts]
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2009-05-07 15:46:32) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+  [4;35;1mAccountGroup Load (0.0ms)[0m   [0mSELECT * FROM "account_groups" [0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/accounts/new]
+
+
+Processing AccountsController#create (for 127.0.0.1 at 2009-05-07 15:46:39) [POST]
+  Parameters: {"commit"=>"Create", "account"=>{"name"=>"44", "account_group_id"=>"1"}, "authenticity_token"=>"w77jTxYUdH3GOXUOnvoLXaAPJ+qicC6ADsgDhDekunw="}
+  [4;36;1mAccount Create (0.0ms)[0m   [0;1mINSERT INTO "accounts" ("name", "updated_at", "account_group_id", "created_at") VALUES('44', '2009-05-07 10:16:39', NULL, '2009-05-07 10:16:39')[0m
+Redirected to http://localhost:3000/accounts/3
+Completed in 78ms (DB: 0) | 302 Found [http://localhost/accounts]
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2009-05-07 15:46:39) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mAccount Load (0.0ms)[0m   [0mSELECT * FROM "accounts" WHERE ("accounts"."id" = 3) [0m
+Rendering template within layouts/accounts
+Rendering accounts/show
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/accounts/3]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2009-05-07 15:47:25) [GET]
+  [4;36;1mAccount Load (0.0ms)[0m   [0;1mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+Completed in 203ms (View: 156, DB: 0) | 200 OK [http://localhost/accounts]
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2009-05-07 15:47:30) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+  [4;35;1mAccountGroup Load (0.0ms)[0m   [0mSELECT * FROM "account_groups" [0m
+Completed in 188ms (View: 141, DB: 0) | 200 OK [http://localhost/accounts/new]
+
+
+Processing AccountsController#create (for 127.0.0.1 at 2009-05-07 15:47:33) [POST]
+  Parameters: {"commit"=>"Create", "account"=>{"name"=>"555", "account_group_id"=>"1"}, "authenticity_token"=>"w77jTxYUdH3GOXUOnvoLXaAPJ+qicC6ADsgDhDekunw="}
+  [4;36;1mAccount Create (0.0ms)[0m   [0;1mINSERT INTO "accounts" ("name", "updated_at", "account_group_id", "created_at") VALUES('555', '2009-05-07 10:18:25', NULL, '2009-05-07 10:18:25')[0m
+Redirected to http://localhost:3000/accounts/4
+Completed in 51844ms (DB: 0) | 302 Found [http://localhost/accounts]
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2009-05-07 15:48:25) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mAccount Load (0.0ms)[0m   [0mSELECT * FROM "accounts" WHERE ("accounts"."id" = 4) [0m
+Rendering template within layouts/accounts
+Rendering accounts/show
+Completed in 13140ms (View: 15, DB: 0) | 200 OK [http://localhost/accounts/4]
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2009-05-07 15:48:39) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+  [4;36;1mAccountGroup Load (0.0ms)[0m   [0;1mSELECT * FROM "account_groups" [0m
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://localhost/accounts/new]
+
+
+Processing AccountsController#create (for 127.0.0.1 at 2009-05-07 15:48:44) [POST]
+  Parameters: {"commit"=>"Create", "account"=>{"name"=>"1235", "account_group_id"=>"1"}, "authenticity_token"=>"w77jTxYUdH3GOXUOnvoLXaAPJ+qicC6ADsgDhDekunw="}
+  [4;35;1mAccount Create (0.0ms)[0m   [0mINSERT INTO "accounts" ("name", "updated_at", "account_group_id", "created_at") VALUES('1235', '2009-05-07 10:18:45', 1, '2009-05-07 10:18:45')[0m
+Redirected to http://localhost:3000/accounts/5
+Completed in 156ms (DB: 0) | 302 Found [http://localhost/accounts]
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2009-05-07 15:48:45) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mAccount Load (0.0ms)[0m   [0;1mSELECT * FROM "accounts" WHERE ("accounts"."id" = 5) [0m
+Rendering template within layouts/accounts
+Rendering accounts/show
+Completed in 78ms (View: 16, DB: 0) | 200 OK [http://localhost/accounts/5]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-07 16:51:42) [GET]
+
+ActionController::RoutingError (No route matches "/abc" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing AbcsController#index (for 127.0.0.1 at 2009-05-07 16:51:50) [GET]
+  [4;36;1mAbc Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: abcs: SELECT * FROM "abcs" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: abcs: SELECT * FROM "abcs" ):
+  app/controllers/abcs_controller.rb:44:in `find_abcs'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (15.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCompanies (20090507102348)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCREATE TABLE "companies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "account_id" integer, "address_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090507102348')[0m
+Migrating to CreateSundryDebtors (20090507102710)
+  [4;35;1mSQL (0.0ms)[0m   [0mCREATE TABLE "sundry_debtors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090507102710')[0m
+Migrating to CreateAbcs (20090507112101)
+  [4;35;1mSQL (0.0ms)[0m   [0mCREATE TABLE "abcs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090507112101')[0m
+Migrating to CreateAddresses (20100505080115)
+Migrating to CreateTelephones (20100505080219)
+Migrating to CreateAccountGroups (20100505080256)
+Migrating to CreateAccounts (20100505080315)
+Migrating to CreateJournalEntries (20100505080347)
+Migrating to CreateJournalLines (20100505080407)
+Migrating to CreateProducts (20100505080506)
+Migrating to CreateItems (20100505080600)
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("abcs")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("account_groups")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("accounts")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("addresses")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("companies")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("items")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("journal_entries")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("journal_lines")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("products")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("sundry_debtors")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("telephones")[0m
+
+
+Processing AbcsController#index (for 127.0.0.1 at 2009-05-07 16:52:16) [GET]
+  [4;35;1mAbc Load (16.0ms)[0m   [0mSELECT * FROM "abcs" [0m
+Rendering template within layouts/abcs
+Rendering abcs/index
+Completed in 234ms (View: 203, DB: 16) | 200 OK [http://localhost/abcs]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-07 16:52:17) [GET]
+
+ActionController::RoutingError (No route matches "/ext/resources/css/ext-all.css" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-07 16:52:17) [GET]
+
+ActionController::RoutingError (No route matches "/ext/adapter/ext/ext-base.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-07 16:52:17) [GET]
+
+ActionController::RoutingError (No route matches "/ext/ext-all-debug.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-07 16:52:17) [GET]
+
+ActionController::RoutingError (No route matches "/ext/src/locale/ext-lang-en.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing AbcsController#index (for 127.0.0.1 at 2009-05-07 16:52:20) [GET]
+  [4;36;1mAbc Load (0.0ms)[0m   [0;1mSELECT * FROM "abcs" [0m
+Rendering template within layouts/abcs
+Rendering abcs/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/abcs]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-07 16:52:20) [GET]
+
+ActionController::RoutingError (No route matches "/ext/resources/css/ext-all.css" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-07 16:52:20) [GET]
+
+ActionController::RoutingError (No route matches "/ext/adapter/ext/ext-base.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-07 16:52:20) [GET]
+
+ActionController::RoutingError (No route matches "/ext/ext-all-debug.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-07 16:52:21) [GET]
+
+ActionController::RoutingError (No route matches "/ext/src/locale/ext-lang-en.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing AbcsController#index (for 127.0.0.1 at 2010-05-07 17:15:23) [GET]
+  [4;35;1mAbc Load (0.0ms)[0m   [0mSELECT * FROM "abcs" [0m
+Rendering template within layouts/abcs
+Rendering abcs/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/abcs]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-07 17:15:23) [GET]
+
+ActionController::RoutingError (No route matches "/ext/resources/css/ext-all.css" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-07 17:15:23) [GET]
+
+ActionController::RoutingError (No route matches "/ext/adapter/ext/ext-base.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-07 17:15:23) [GET]
+
+ActionController::RoutingError (No route matches "/ext/ext-all-debug.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-07 17:15:24) [GET]
+
+ActionController::RoutingError (No route matches "/ext/src/locale/ext-lang-en.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing AbcsController#index (for 127.0.0.1 at 2010-05-07 17:15:58) [GET]
+  [4;36;1mAbc Load (0.0ms)[0m   [0;1mSELECT * FROM "abcs" [0m
+Rendering template within layouts/abcs
+Rendering abcs/index
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://localhost/abcs]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-07 17:15:58) [GET]
+
+ActionController::RoutingError (No route matches "/ext/adapter/ext/ext-base.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-07 17:15:58) [GET]
+
+ActionController::RoutingError (No route matches "/ext/resources/css/ext-all.css" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-07 17:15:58) [GET]
+
+ActionController::RoutingError (No route matches "/ext/ext-all-debug.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-07 17:15:59) [GET]
+
+ActionController::RoutingError (No route matches "/ext/src/locale/ext-lang-en.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing AbcsController#index (for 127.0.0.1 at 2010-05-07 17:16:03) [GET]
+  [4;35;1mAbc Load (0.0ms)[0m   [0mSELECT * FROM "abcs" [0m
+Rendering template within layouts/abcs
+Rendering abcs/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/abcs]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-07 17:16:03) [GET]
+
+ActionController::RoutingError (No route matches "/ext/resources/css/ext-all.css" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-07 17:16:03) [GET]
+
+ActionController::RoutingError (No route matches "/ext/adapter/ext/ext-base.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-07 17:16:03) [GET]
+
+ActionController::RoutingError (No route matches "/ext/ext-all-debug.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-07 17:16:03) [GET]
+
+ActionController::RoutingError (No route matches "/ext/src/locale/ext-lang-en.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing AbcsController#index (for 127.0.0.1 at 2010-05-07 17:16:27) [GET]
+  [4;36;1mAbc Load (0.0ms)[0m   [0;1mSELECT * FROM "abcs" [0m
+Rendering template within layouts/abcs
+Rendering abcs/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/abcs]
+
+
+Processing AbcsController#index to ext_json (for 127.0.0.1 at 2010-05-07 17:16:28) [GET]
+  Parameters: {"dir"=>"ASC", "start"=>"0", "_dc"=>"1273232787854", "sort"=>"id", "limit"=>"50"}
+  [4;35;1mAbc Load (0.0ms)[0m   [0mSELECT * FROM "abcs" LIMIT 50 OFFSET 0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "abcs" [0m
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/abcs?format=ext_json&_dc=1273232787854&start=0&limit=50&sort=id&dir=ASC]
+
+
+Processing AbcsController#create to ext_json (for 127.0.0.1 at 2010-05-07 17:17:36) [POST]
+  Parameters: {"abc"=>{"title"=>"abc"}, "authenticity_token"=>"w77jTxYUdH3GOXUOnvoLXaAPJ+qicC6ADsgDhDekunw="}
+  [4;35;1mAbc Create (0.0ms)[0m   [0mINSERT INTO "abcs" ("updated_at", "title", "created_at") VALUES('2010-05-07 11:47:36', 'abc', '2010-05-07 11:47:36')[0m
+Completed in 110ms (View: 16, DB: 0) | 200 OK [http://localhost/abcs]
+
+
+Processing AbcsController#index to ext_json (for 127.0.0.1 at 2010-05-07 17:17:36) [GET]
+  Parameters: {"dir"=>"ASC", "start"=>"0", "_dc"=>"1273232856475", "sort"=>"id", "limit"=>"50"}
+  [4;36;1mAbc Load (0.0ms)[0m   [0;1mSELECT * FROM "abcs" LIMIT 50 OFFSET 0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "abcs" [0m
+Completed in 969ms (View: 0, DB: 0) | 200 OK [http://localhost/abcs?format=ext_json&_dc=1273232856475&start=0&limit=50&sort=id&dir=ASC]
+
+
+Processing AbcsController#create to ext_json (for 127.0.0.1 at 2010-05-07 17:17:45) [POST]
+  Parameters: {"abc"=>{"title"=>"ankur"}, "authenticity_token"=>"w77jTxYUdH3GOXUOnvoLXaAPJ+qicC6ADsgDhDekunw="}
+  [4;36;1mAbc Create (0.0ms)[0m   [0;1mINSERT INTO "abcs" ("updated_at", "title", "created_at") VALUES('2010-05-07 11:47:45', 'ankur', '2010-05-07 11:47:45')[0m
+Completed in 78ms (View: 0, DB: 0) | 200 OK [http://localhost/abcs]
+
+
+Processing AbcsController#index to ext_json (for 127.0.0.1 at 2010-05-07 17:17:45) [GET]
+  Parameters: {"dir"=>"ASC", "start"=>"0", "_dc"=>"1273232865785", "sort"=>"id", "limit"=>"50"}
+  [4;35;1mAbc Load (0.0ms)[0m   [0mSELECT * FROM "abcs" LIMIT 50 OFFSET 0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "abcs" [0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/abcs?format=ext_json&_dc=1273232865785&start=0&limit=50&sort=id&dir=ASC]
+
+
+Processing AbcsController#index to ext_json (for 127.0.0.1 at 2010-05-07 17:17:54) [GET]
+  Parameters: {"dir"=>"ASC", "start"=>"0", "_dc"=>"1273232874255", "sort"=>"id", "limit"=>"50"}
+  [4;35;1mAbc Load (0.0ms)[0m   [0mSELECT * FROM "abcs" LIMIT 50 OFFSET 0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "abcs" [0m
+Completed in 32ms (View: 0, DB: 0) | 200 OK [http://localhost/abcs?format=ext_json&_dc=1273232874255&start=0&limit=50&sort=id&dir=ASC]
+
+
+<<<<<<< HEAD
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-08 01:12:51) [GET]
+
+ActionController::RoutingError (No route matches "/account" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-05-08 01:12:54) [GET]
+  [4;36;1mAccount Load (14.7ms)[0m   [0;1mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.name) on line #11 of app/views/accounts/index.html.erb:
+8: <% @accounts.each do |account| %>
+9:   <tr>
+10:     <td><%=h account.name %></td>
+11:     <td><%=h account.account_group.name %></td>
+12:     <td><%= link_to 'Show', account %></td>
+13:     <td><%= link_to 'Edit', edit_account_path(account) %></td>
+14:     <td><%= link_to 'Destroy', account, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/views/accounts/index.html.erb:11
+    app/views/accounts/index.html.erb:8:in `each'
+    app/views/accounts/index.html.erb:8
+    app/controllers/accounts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (111.1ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2010-05-08 01:13:14) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+  [4;35;1mAccountGroup Load (0.4ms)[0m   [0mSELECT * FROM "account_groups" [0m
+Completed in 461ms (View: 456, DB: 0) | 200 OK [http://localhost/accounts/new]
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2010-05-08 01:13:18) [GET]
+  Parameters: {"id"=>"delete"}
+  [4;36;1mAccount Load (0.1ms)[0m   [0;1mSELECT * FROM "accounts" WHERE ("accounts"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Account with ID=delete):
+  app/controllers/accounts_controller.rb:16:in `show'
+
+Rendered rescues/_trace (37.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing AccountsController#delete (for 127.0.0.1 at 2010-05-08 01:13:24) [GET]
+  Parameters: {"id"=>"1"}
+
+ActionController::UnknownAction (No action responded to delete. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AccountsController#delete (for 127.0.0.1 at 2010-05-08 01:13:34) [GET]
+  Parameters: {"id"=>"2"}
+
+ActionController::UnknownAction (No action responded to delete. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AccountsController#1 (for 127.0.0.1 at 2010-05-08 01:13:40) [GET]
+  Parameters: {"id"=>"delete"}
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2010-05-08 01:13:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAccount Load (0.2ms)[0m   [0mSELECT * FROM "accounts" WHERE ("accounts"."id" = 1) [0m
+Rendering template within layouts/accounts
+Rendering accounts/show
+Completed in 48ms (View: 42, DB: 0) | 200 OK [http://localhost/accounts/1]
+
+
+Processing AccountsController#edit (for 127.0.0.1 at 2010-05-08 01:13:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAccount Load (0.2ms)[0m   [0;1mSELECT * FROM "accounts" WHERE ("accounts"."id" = 1) [0m
+Rendering template within layouts/accounts
+Rendering accounts/edit
+Completed in 49ms (View: 43, DB: 0) | 200 OK [http://localhost/accounts/1/edit]
+
+
+Processing AccountsController#update (for 127.0.0.1 at 2010-05-08 01:13:50) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"CE6e5eJ6JJf12DVoSTycyk0o4D+AQ/yzz5bihBx4mGI=", "account"=>{"name"=>"aaa"}, "id"=>"1"}
+  [4;35;1mAccount Load (0.2ms)[0m   [0mSELECT * FROM "accounts" WHERE ("accounts"."id" = 1) [0m
+Redirected to http://localhost:3000/accounts/1
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/accounts/1]
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2010-05-08 01:13:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAccount Load (0.2ms)[0m   [0;1mSELECT * FROM "accounts" WHERE ("accounts"."id" = 1) [0m
+Rendering template within layouts/accounts
+Rendering accounts/show
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/accounts/1]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-05-08 01:13:52) [GET]
+  [4;35;1mAccount Load (0.8ms)[0m   [0mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.name) on line #11 of app/views/accounts/index.html.erb:
+8: <% @accounts.each do |account| %>
+9:   <tr>
+10:     <td><%=h account.name %></td>
+11:     <td><%=h account.account_group.name %></td>
+12:     <td><%= link_to 'Show', account %></td>
+13:     <td><%= link_to 'Edit', edit_account_path(account) %></td>
+14:     <td><%= link_to 'Destroy', account, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/views/accounts/index.html.erb:11
+    app/views/accounts/index.html.erb:8:in `each'
+    app/views/accounts/index.html.erb:8
+    app/controllers/accounts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (47.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AccountsController#1 (for 127.0.0.1 at 2010-05-08 01:14:02) [GET]
+  Parameters: {"id"=>"delete"}
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AccountsController#1 (for 127.0.0.1 at 2010-05-08 01:14:06) [GET]
+  Parameters: {"id"=>"destroy"}
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AccountsController#destroy (for 127.0.0.1 at 2010-05-08 01:14:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAccount Load (0.2ms)[0m   [0;1mSELECT * FROM "accounts" WHERE ("accounts"."id" = 1) [0m
+  [4;35;1mAccount Destroy (13.8ms)[0m   [0mDELETE FROM "accounts" WHERE "id" = 1[0m
+Redirected to http://localhost:3000/accounts
+Completed in 22ms (DB: 14) | 302 Found [http://localhost/accounts/destroy/1]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-05-08 01:14:17) [GET]
+  [4;36;1mAccount Load (0.8ms)[0m   [0;1mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.name) on line #11 of app/views/accounts/index.html.erb:
+8: <% @accounts.each do |account| %>
+9:   <tr>
+10:     <td><%=h account.name %></td>
+11:     <td><%=h account.account_group.name %></td>
+12:     <td><%= link_to 'Show', account %></td>
+13:     <td><%= link_to 'Edit', edit_account_path(account) %></td>
+14:     <td><%= link_to 'Destroy', account, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/views/accounts/index.html.erb:11
+    app/views/accounts/index.html.erb:8:in `each'
+    app/views/accounts/index.html.erb:8
+    app/controllers/accounts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (47.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AccountsController#destroy (for 127.0.0.1 at 2010-05-08 01:14:30) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mAccount Load (0.2ms)[0m   [0mSELECT * FROM "accounts" WHERE ("accounts"."id" = 2) [0m
+  [4;36;1mAccount Destroy (0.3ms)[0m   [0;1mDELETE FROM "accounts" WHERE "id" = 2[0m
+Redirected to http://localhost:3000/accounts
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/accounts/destroy/2]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-05-08 01:14:30) [GET]
+  [4;35;1mAccount Load (0.8ms)[0m   [0mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.name) on line #11 of app/views/accounts/index.html.erb:
+8: <% @accounts.each do |account| %>
+9:   <tr>
+10:     <td><%=h account.name %></td>
+11:     <td><%=h account.account_group.name %></td>
+12:     <td><%= link_to 'Show', account %></td>
+13:     <td><%= link_to 'Edit', edit_account_path(account) %></td>
+14:     <td><%= link_to 'Destroy', account, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/views/accounts/index.html.erb:11
+    app/views/accounts/index.html.erb:8:in `each'
+    app/views/accounts/index.html.erb:8
+    app/controllers/accounts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (47.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AccountsController#destroy (for 127.0.0.1 at 2010-05-08 01:14:36) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mAccount Load (0.2ms)[0m   [0;1mSELECT * FROM "accounts" WHERE ("accounts"."id" = 3) [0m
+  [4;35;1mAccount Destroy (0.3ms)[0m   [0mDELETE FROM "accounts" WHERE "id" = 3[0m
+Redirected to http://localhost:3000/accounts
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/accounts/destroy/3]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-05-08 01:14:37) [GET]
+  [4;36;1mAccount Load (0.7ms)[0m   [0;1mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.name) on line #11 of app/views/accounts/index.html.erb:
+8: <% @accounts.each do |account| %>
+9:   <tr>
+10:     <td><%=h account.name %></td>
+11:     <td><%=h account.account_group.name %></td>
+12:     <td><%= link_to 'Show', account %></td>
+13:     <td><%= link_to 'Edit', edit_account_path(account) %></td>
+14:     <td><%= link_to 'Destroy', account, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/views/accounts/index.html.erb:11
+    app/views/accounts/index.html.erb:8:in `each'
+    app/views/accounts/index.html.erb:8
+    app/controllers/accounts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (47.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AccountsController#destroy (for 127.0.0.1 at 2010-05-08 01:14:42) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mAccount Load (0.1ms)[0m   [0mSELECT * FROM "accounts" WHERE ("accounts"."id" = 3) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Account with ID=3):
+  app/controllers/accounts_controller.rb:79:in `destroy'
+
+Rendered rescues/_trace (37.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-05-08 01:14:50) [GET]
+  [4;36;1mAccount Load (0.7ms)[0m   [0;1mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.name) on line #11 of app/views/accounts/index.html.erb:
+8: <% @accounts.each do |account| %>
+9:   <tr>
+10:     <td><%=h account.name %></td>
+11:     <td><%=h account.account_group.name %></td>
+12:     <td><%= link_to 'Show', account %></td>
+13:     <td><%= link_to 'Edit', edit_account_path(account) %></td>
+14:     <td><%= link_to 'Destroy', account, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/views/accounts/index.html.erb:11
+    app/views/accounts/index.html.erb:8:in `each'
+    app/views/accounts/index.html.erb:8
+    app/controllers/accounts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (116.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-05-08 01:15:27) [GET]
+  [4;35;1mAccount Load (0.7ms)[0m   [0mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+Completed in 19ms (View: 14, DB: 1) | 200 OK [http://localhost/accounts/]
+
+
+Processing AccountsController#destroy (for 127.0.0.1 at 2010-05-08 01:15:35) [DELETE]
+  Parameters: {"authenticity_token"=>"CE6e5eJ6JJf12DVoSTycyk0o4D+AQ/yzz5bihBx4mGI=", "id"=>"4"}
+  [4;36;1mAccount Load (0.2ms)[0m   [0;1mSELECT * FROM "accounts" WHERE ("accounts"."id" = 4) [0m
+  [4;35;1mAccount Destroy (0.3ms)[0m   [0mDELETE FROM "accounts" WHERE "id" = 4[0m
+Redirected to http://localhost:3000/accounts
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/accounts/4]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-05-08 01:15:35) [GET]
+  [4;36;1mAccount Load (0.6ms)[0m   [0;1mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/accounts]
+
+
+Processing AccountsController#destroy (for 127.0.0.1 at 2010-05-08 01:15:43) [DELETE]
+  Parameters: {"authenticity_token"=>"CE6e5eJ6JJf12DVoSTycyk0o4D+AQ/yzz5bihBx4mGI=", "id"=>"5"}
+  [4;35;1mAccount Load (0.2ms)[0m   [0mSELECT * FROM "accounts" WHERE ("accounts"."id" = 5) [0m
+  [4;36;1mAccount Destroy (0.3ms)[0m   [0;1mDELETE FROM "accounts" WHERE "id" = 5[0m
+Redirected to http://localhost:3000/accounts
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/accounts/5]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-05-08 01:15:43) [GET]
+  [4;35;1mAccount Load (0.6ms)[0m   [0mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://localhost/accounts]
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2010-05-08 01:15:51) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+  [4;36;1mAccountGroup Load (0.3ms)[0m   [0;1mSELECT * FROM "account_groups" [0m
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/accounts/new]
+
+
+Processing AccountsController#create (for 127.0.0.1 at 2010-05-08 01:15:55) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"CE6e5eJ6JJf12DVoSTycyk0o4D+AQ/yzz5bihBx4mGI=", "account"=>{"name"=>"hello", "account_group_id"=>"1"}}
+  [4;35;1mAccount Create (0.3ms)[0m   [0mINSERT INTO "accounts" ("name", "created_at", "updated_at", "account_group_id") VALUES('hello', '2010-05-07 19:45:55', '2010-05-07 19:45:55', 1)[0m
+Redirected to http://localhost:3000/accounts/6
+Completed in 11ms (DB: 0) | 302 Found [http://localhost/accounts]
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2010-05-08 01:15:55) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mAccount Load (0.2ms)[0m   [0;1mSELECT * FROM "accounts" WHERE ("accounts"."id" = 6) [0m
+Rendering template within layouts/accounts
+Rendering accounts/show
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/accounts/6]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-05-08 01:15:56) [GET]
+  [4;35;1mAccount Load (0.6ms)[0m   [0mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+  [4;36;1mAccountGroup Load (0.3ms)[0m   [0;1mSELECT * FROM "account_groups" WHERE ("account_groups"."id" = 1) [0m
+Completed in 81ms (View: 15, DB: 1) | 200 OK [http://localhost/accounts]
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2010-05-08 01:16:00) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+  [4;35;1mAccountGroup Load (0.3ms)[0m   [0mSELECT * FROM "account_groups" [0m
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/accounts/new]
+
+
+Processing AccountsController#create (for 127.0.0.1 at 2010-05-08 01:16:06) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"CE6e5eJ6JJf12DVoSTycyk0o4D+AQ/yzz5bihBx4mGI=", "account"=>{"name"=>"world", "account_group_id"=>"2"}}
+  [4;36;1mAccount Create (0.4ms)[0m   [0;1mINSERT INTO "accounts" ("name", "created_at", "updated_at", "account_group_id") VALUES('world', '2010-05-07 19:46:06', '2010-05-07 19:46:06', 2)[0m
+Redirected to http://localhost:3000/accounts/7
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/accounts]
+
+
+Processing AccountsController#show (for 127.0.0.1 at 2010-05-08 01:16:06) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mAccount Load (0.2ms)[0m   [0mSELECT * FROM "accounts" WHERE ("accounts"."id" = 7) [0m
+Rendering template within layouts/accounts
+Rendering accounts/show
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/accounts/7]
+
+
+Processing AccountsController#index (for 127.0.0.1 at 2010-05-08 01:16:07) [GET]
+  [4;36;1mAccount Load (60.7ms)[0m   [0;1mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+  [4;35;1mAccountGroup Load (0.2ms)[0m   [0mSELECT * FROM "account_groups" WHERE ("account_groups"."id" = 1) [0m
+  [4;36;1mAccountGroup Load (0.3ms)[0m   [0;1mSELECT * FROM "account_groups" WHERE ("account_groups"."id" = 2) [0m
+Completed in 81ms (View: 15, DB: 61) | 200 OK [http://localhost/accounts]
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2010-05-08 01:17:05) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+ERROR: compiling _run_erb_app47views47accounts47new46html46erb RAISED compile error
+/Users/amitghidia/acc/app/views/accounts/new.html.erb:9: syntax error, unexpected '<'
+    <%= f.text_field :name ).to_s);...
+     ^
+/Users/amitghidia/acc/app/views/accounts/new.html.erb:23: syntax error, unexpected tIDENTIFIER, expecting ')'
+Function body:           def _run_erb_app47views47accounts47new46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>New account</h1>\n\n"
+
+;  form_for(@account) do |f| ; @output_buffer.concat "\n  "
+; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :name ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( render :partial>
+    <%= f.text_field :name ).to_s); @output_buffer.concat "\n  </p>\n    <p>\n      "
+
+
+; @output_buffer.concat(( f.collection_select :account_group_id, AccountGroup.all, :id, :name ).to_s); @output_buffer.concat "\n\n    </p>\n  <p>\n    "
+
+
+
+; @output_buffer.concat(( f.submit 'Create' ).to_s); @output_buffer.concat "\n  </p>\n"
+
+;  end ; @output_buffer.concat "\n\n"
+
+; @output_buffer.concat(( link_to 'Back', accounts_path ).to_s); @output_buffer.concat "\n"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/amitghidia/acc/app/views/accounts/new.html.erb:24:in `compile!'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:61:in `compile'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:28:in `render'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:260:in `render'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:343:in `_render_with_layout'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:257:in `render'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/amitghidia/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/amitghidia/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:135:in `send'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:135:in `custom'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:179:in `call'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:179:in `respond'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:173:in `each'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:173:in `respond'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/amitghidia/acc/app/controllers/accounts_controller.rb:30:in `new'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1331:in `send'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/amitghidia/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/amitghidia/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `send'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:606:in `process'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:391:in `process'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:386:in `call'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/amitghidia/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/amitghidia/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/amitghidia/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/amitghidia/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+/Users/amitghidia/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+/Users/amitghidia/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+/Users/amitghidia/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/amitghidia/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/amitghidia/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Users/amitghidia/.gem/ruby/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/amitghidia/acc/app/views/accounts/new.html.erb:9: syntax error, unexpected '<'
+    <%= f.text_field :name ).to_s);...
+     ^
+/Users/amitghidia/acc/app/views/accounts/new.html.erb:23: syntax error, unexpected tIDENTIFIER, expecting ')') on line #9 of app/views/accounts/new.html.erb:
+6:   <p>
+7:     <%= f.label :name %><br />
+8:     <%= render :partial>
+9:     <%= f.text_field :name %>
+10:   </p>
+11:     <p>
+12:       <%= f.collection_select :account_group_id, AccountGroup.all, :id, :name %>
+
+    app/views/accounts/new.html.erb:24:in `compile!'
+    app/controllers/accounts_controller.rb:30:in `new'
+
+Rendered rescues/_trace (45.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2010-05-08 01:17:18) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+
+ActionView::TemplateError (undefined method `include?' for :partial:Symbol) on line #8 of app/views/accounts/new.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :name %><br />
+8:     <%= render :partial%>
+9:     <%= f.text_field :name %>
+10:   </p>
+11:     <p>
+
+    app/views/accounts/new.html.erb:8
+    app/views/accounts/new.html.erb:3
+    app/controllers/accounts_controller.rb:30:in `new'
+
+Rendered rescues/_trace (50.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+=======
+Processing AccountsController#index (for 127.0.0.1 at 2010-05-08 12:59:16) [GET]
+  [4;36;1mAccount Load (0.0ms)[0m   [0;1mSELECT * FROM "accounts" [0m
+Rendering template within layouts/accounts
+Rendering accounts/index
+Completed in 906ms (View: 859, DB: 0) | 200 OK [http://localhost/accounts]
+
+
+Processing AccountsController#edit (for 127.0.0.1 at 2010-05-08 12:59:37) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mAccount Load (0.0ms)[0m   [0mSELECT * FROM "accounts" WHERE ("accounts"."id" = 5) [0m
+Rendering template within layouts/accounts
+Rendering accounts/edit
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/accounts/5/edit]
+>>>>>>> 6f2a82c432d6973ec5bdeedf5524469ca6d08a8e

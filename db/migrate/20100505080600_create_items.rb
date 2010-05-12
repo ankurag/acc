@@ -1,6 +1,7 @@
 class CreateItems < ActiveRecord::Migration
   def self.up
     create_table :items do |t|
+      
       t.decimal :sale_price
       t.decimal :purchase_price
       t.decimal :quantity

@@ -1,0 +1,13 @@
+<p>
+  <b>Date:</b>
+  <%=h @invoice.date %>
+</p>
+
+<p>
+  <b>Invoice no:</b>
+  <%=h @invoice.invoice_no %>
+</p>
+
+
+<%= link_to 'Edit', edit_invoice_path(@invoice) %> |
+<%= link_to 'Back', invoices_path %>

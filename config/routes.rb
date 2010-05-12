@@ -1,4 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :invoices
+
+  map.resources :banks
+
   map.resources :zonal_areas
 
   map.resources :med_reps

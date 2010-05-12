@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  date: 2010-05-11
+  invoice_no: MyString
+
+two:
+  date: 2010-05-11
+  invoice_no: MyString

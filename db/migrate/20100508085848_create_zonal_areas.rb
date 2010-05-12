@@ -3,6 +3,7 @@ class CreateZonalAreas < ActiveRecord::Migration
     create_table :zonal_areas do |t|
       t.string :name
 
+      #foreign keys
       t.integer :company_id
       t.integer :med_rep_id
       t.timestamps

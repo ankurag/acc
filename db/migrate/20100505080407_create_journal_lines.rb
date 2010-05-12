@@ -3,6 +3,9 @@ class CreateJournalLines < ActiveRecord::Migration
     create_table :journal_lines do |t|
       t.decimal :amount
 
+      #foreign key
+      t.integer :account_id
+
       t.timestamps
     end
   end

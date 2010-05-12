@@ -3,6 +3,7 @@ class CreateJournalEntries < ActiveRecord::Migration
     create_table :journal_entries do |t|
       t.date :date
       t.string :narration
+      t.boolean :status
 
       t.integer :journal_line_id
 

@@ -11,6 +11,8 @@ class CreateAddresses < ActiveRecord::Migration
       t.string :pan_no
 
       t.integer :telephone_id
+      t.integer :telephone_id
+      t.string  :email
 
       t.timestamps
     end

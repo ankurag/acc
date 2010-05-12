@@ -3,9 +3,11 @@ class CreateCompanies < ActiveRecord::Migration
     create_table :companies do |t|
       t.string :name
 
-      
+
+      #foreign keys
       t.integer :account_id
       t.integer :address_id
+      t.integer :zonal_area_id
 
       t.timestamps
     end
